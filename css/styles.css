@@ -1189,3 +1189,37 @@ img {
   -ms-user-select: none;
 
 }
+#container{
+  width: 30%;
+  background: yellow;
+}
+#floated{
+  float: left;
+  width: 40%;
+  background: red;
+}
+#pic1 {
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  float: left; /* Ensure the image is floated */
+  margin-right: 1px; /* Add margin to create space between the text and image */
+  margin-left: 10px;
+  margin-bottom: 15px; /* Ensure text doesn't collide with the image */
+}
+#text1 {
+  width: 15%;
+  height: 20em; /* Maintain aspect ratio */
+  float: left; /* Ensure the image is floated */
+  margin-right: 20px; /* Add margin to create space between the text and image */
+  margin-left: 10px;
+  margin-bottom: 15px; /* Ensure text doesn't collide with the image */
+}
+#text-content {
+  overflow: hidden; /* Prevent weird float behavior */
+}
+#floated{
+  float: left;
+}
