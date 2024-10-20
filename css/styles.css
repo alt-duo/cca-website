@@ -1189,7 +1189,7 @@ img {
   -ms-user-select: none;
 
 }
-#container{
+#container{ 
   width: 30%;
   background: yellow;
 }
@@ -1222,4 +1222,32 @@ img {
 }
 #floated{
   float: left;
+}
+.centered-iframe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(130%, -50%);
+  width: 300px; /* Responsive width */
+  height: calc(250px * 1.7777); /* Maintain 16:9 aspect ratio */
+  max-width: 100%; /* Prevents iframe from exceeding window width */
+  max-height: 100%; /* Prevents iframe from exceeding window height */
+  border: 2px solid black; /* Optional styling */
+  box-sizing: border-box; /* Ensures border is included in element size */
+}
+
+@media (max-width: 768px) {
+  .centered-iframe {
+    width: 90vw;
+    height: calc(90vw * 1.7777); /* Adjust the size for smaller screens */
+  }
+}
+.bold {
+  font-weight: bold;
+}
+.highlight {
+  background-color: yellow;
+}
+.underline {
+  text-decoration: underline;
 }
